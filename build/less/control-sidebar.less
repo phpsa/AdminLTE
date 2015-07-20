@@ -5,25 +5,21 @@
 //This is a hack to make the background visible while scrolling
 .control-sidebar-bg {
   position: fixed;
-  z-index: 900;
-  top: 0;
-  right: 0;
+  z-index: 1000;
   bottom: 0;
-  width: @control-sidebar-width;
 }
 //Transitions
 .control-sidebar-bg,
 .control-sidebar {
-  .translate(@control-sidebar-width, 0);
-  .transition-transform(@transition-speed ease-in-out);
+  top: 0;
+  right: -@control-sidebar-width;
+  width: @control-sidebar-width;
+  .transition(right @transition-speed ease-in-out);
 }
 //The sidebar
 .control-sidebar {
   position: absolute;
-  top: 0;
   padding-top: @navbar-height;
-  right: 0;
-  width: @control-sidebar-width;
   z-index: 1010;
   //Fix position after header collapse
   @media (max-width: @screen-sm) {
@@ -37,7 +33,7 @@
   &.control-sidebar-open {
     &,
     + .control-sidebar-bg {
-      .translate(0, 0);
+      right: 0;
     }
   }
 }
@@ -45,7 +41,7 @@
 .control-sidebar-open {
   .control-sidebar-bg,
   .control-sidebar {
-    .translate(0,0);
+    right: 0;
   }
   @media(min-width: @screen-sm) {
     .content-wrapper,
@@ -63,7 +59,7 @@
       &,
       &:hover {
         border-left-width: 0!important;
-      }      
+      }
     }
     > a {
       .border-radius(0)!important;
@@ -102,7 +98,7 @@
   }
 }
 //Headings in the sidebar content
-.control-sidebar-heading {  
+.control-sidebar-heading {
   font-weight: 400;
   font-size: 16px;
   padding: 10px 0;
@@ -122,7 +118,7 @@
   > li > a {
     .clearfix();
     display: block;
-    padding: 10px 15px;    
+    padding: 10px 15px;
     > .control-sidebar-subheading {
       margin-top: 0;
     }
@@ -142,7 +138,7 @@
       margin: 0;
     }
     > p {
-      margin: 0;      
+      margin: 0;
       font-size: 11px;
     }
   }
@@ -152,7 +148,7 @@
 }
 //Dark skin
 .control-sidebar-dark {
-  color: @sidebar-dark-color;  
+  color: @sidebar-dark-color;
   // Background
   &,
   + .control-sidebar-bg {
@@ -214,7 +210,7 @@
 }
 //Light skin
 .control-sidebar-light {
-  color: lighten(@sidebar-light-color, 10%);  
+  color: lighten(@sidebar-light-color, 10%);
   // Background
   &,
   + .control-sidebar-bg {

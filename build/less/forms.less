@@ -3,7 +3,7 @@
  * ---------------
  */
 .form-control {
-  .border-radius(@input-radius)!important;  
+  .border-radius(@input-radius)!important;
   box-shadow: none;
   border-color: @gray;
   &:focus {
@@ -79,4 +79,20 @@
 
 .icheck > label {
   padding-left: 0;
+}
+
+/* support Font Awesome icons in form-control */
+.form-control-feedback.fa {
+    line-height: @input-height-base;
+}
+
+.input-lg + .form-control-feedback.fa,
+.input-group-lg + .form-control-feedback.fa,
+.form-group-lg .form-control + .form-control-feedback.fa {
+  line-height: @input-height-large;
+}
+.input-sm + .form-control-feedback.fa,
+.input-group-sm + .form-control-feedback.fa,
+.form-group-sm .form-control + .form-control-feedback.fa {
+  line-height: @input-height-small;
 }

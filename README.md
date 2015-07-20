@@ -1,7 +1,7 @@
 Introduction
 ============
 
-**AdminLTE** -- is a fully responsive admin template. Based on **Bootstrap 3** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself. 
+**AdminLTE** -- is a fully responsive admin template. Based on **Bootstrap 3** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself.
 
 **Download & Preview on [Almsaeed Studio](https://almsaeedstudio.com)**
 
@@ -20,14 +20,14 @@ There are multiple ways to install AdminLTE.
 
 ####Download:
 
-Download from Github or [visit Almsaeed Studio](https://almsaeedstudio.com) and download the lateset release.
+Download from Github or [visit Almsaeed Studio](https://almsaeedstudio.com) and download the latest release.
 
 ####Using The Command Line:
 
 **Github**
 
 - Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine 
+- Clone to your machine
 ```
 git clone https://github.com/YOUR_USERNAME/AdminLTE.git
 ```
@@ -92,6 +92,31 @@ AdminLTE 1.x can be easily upgraded to 2.x using [this guide](https://almsaeedst
 
 Change log
 ----------
+**v2.2.0**
+- Bug fixes
+- Added support for [Select2](https://select2.github.io/)
+- Updated ChartJS
+
+**v2.1.2:**
+- Added explicit BoxWidget activation function issue #450
+- Crushed some bugs
+
+**v2.1.1:**
+- Fix version error
+
+**v2.1.0:**
+- Update Ion Icons
+- Added right sidebar ```.control-sidebar```
+- Control sidebar has 2 open effects: slide over content and push content
+- Control sidebar converts to always slide over content on small screens
+- Added 6 new light sidebar skins
+- Updated demo menu
+- Added ChartJS preview page
+- Fixed some minor bugs
+- Added light control sidebar skin
+- Added expand on hover option for sidebar mini
+- Added fixed control sidebar layout
+
 **v2.0.5:**
 - Fixed issue #288
 
@@ -121,13 +146,13 @@ Change log
 - Change in layout mark up
 - Added transitions to the sidebar
 - New skins and modified previous skins
-- Change in color scheme to a more complementing scheme 
+- Change in color scheme to a more complementing scheme
 - Added footer support
 - Removed pace.js from the main app.js
 - Added support for collapsed sidebar as an initial state (add .sidebar-collapse to the body tag)
 - Added boxed layout (.layout-boxed)
 - Enhanced consistency in padding and margining
-- Updated Bootstrap to 3.3.2 
+- Updated Bootstrap to 3.3.2
 - Fixed navbar dropdown menu on small screens positioning issues.
 - Updated Ion Icons to 2.0.0
 - Updated FontAwesome to 4.3.0
@@ -152,7 +177,7 @@ Change log
 
 - Fixed the sidebar scroll issue when using the fixed layout.
 - Added [Bootstrap Social Buttons](http://lipis.github.io/bootstrap-social/ "Bootstrap Social") plugin.
-- Fixed RequireJS bug. Thanks to [StaticSphere](https://github.com/StaticSphere "github user"). 
+- Fixed RequireJS bug. Thanks to [StaticSphere](https://github.com/StaticSphere "github user").
 
 **ver 1.1.0:**
 
