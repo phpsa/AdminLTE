@@ -1,5 +1,6 @@
-'use strict';
 $(function () {
+
+  'use strict';
 
   /* ChartJS
    * -------
@@ -75,7 +76,7 @@ $(function () {
     //String - A legend template
     legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%=datasets[i].label%></li><%}%></ul>",
     //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     //Boolean - whether to make the chart responsive to window resizing
     responsive: true
   };
@@ -189,8 +190,7 @@ $(function () {
       selected: {
         fill: 'yellow'
       },
-      selectedHover: {
-      }
+      selectedHover: {}
     },
     markerStyle: {
       initial: {
